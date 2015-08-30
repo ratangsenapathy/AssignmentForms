@@ -1,0 +1,17 @@
+# Meteor packages used by this project, one per line.
+# Check this file (and the other files in this directory) into your repository.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+meteor-platform
+aldeed:autoform
+aldeed:collection2
+bootswatch:paper
+aldeed:autoform-bs-datepicker
+rajit:bootstrap3-datepicker
+yogiben:autoform-file
+cfs:standard-packages
+cfs:gridfs
+iron:router
+matb33:collection-hooks
