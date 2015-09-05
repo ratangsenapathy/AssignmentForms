@@ -1,4 +1,21 @@
 <template name="submitted">
-    <h1>{{topic}}</h1>
-    <h1>{{_id}}</h1>
+    <h1>Topic:{{topic}}</h1>
+    <h1>No of pages:{{pages}}</h1>
+    <h1>Description:{{description}}</h1>
+    <h1>Output Format:{{outputFormat}}</h1>
+    <h1>Word count:{{words}}</h1>
+    
+    <h1 id="UploadedFile">Uploaded File={{up}}</h1>
+  <b>Enter email:</b>
+  <input type="text" id="email">
+  <input type="button" id="sendEmail" value="Send Link" onclick="send()">
+
+  <script>
+    function send() {
+  // Meteor.call('sendMail','1');
+  var recepient=document.getElementById("email");
+     var recepientName=recepient.value;
+  Meteor.call('sendEmail', recepientName, 'ratangsenapathy@gmail.com', 'Url for assignment details', 'Url='+window.location.href);
+}
+  </script>
 </template>
